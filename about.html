@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="About Active Energy Boost - Our story, elite philosophy, world-class trainers, and state-of-the-art facilities. Discover the premium fitness brand redefining human performance.">
+  <meta name="keywords" content="about fitness brand, luxury gym, wellness philosophy, personal training experts, transformation stories">
+  <title>About Us | Active Energy Boost - The Pursuit of Elite Vitality</title>
+  
+  <!-- Schema Markup (Organization) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthClub",
+    "name": "Active Energy Boost",
+    "url": "https://www.activeenergyboost.com/about",
+    "logo": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=200&auto=format",
+    "description": "Active Energy Boost is a premium international fitness & wellness brand founded in 2015, merging elite athletic performance with sustainable wellness.",
+    "founder": "Marcus Vega & Dr. Sana Kapoor",
+    "foundingDate": "2015",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "100 Wellness Avenue, Suite 400",
+      "addressLocality": "Los Angeles",
+      "addressRegion": "CA",
+      "postalCode": "90210",
+      "addressCountry": "USA"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-800-555-ENERGY",
+      "contactType": "customer service",
+      "email": "hello@activeenergyboost.com"
+    },
+    "sameAs": [
+      "https://www.instagram.com/activeenergyboost",
+      "https://www.facebook.com/activeenergyboost",
+      "https://twitter.com/activeenergyb"
+    ]
+  }
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+      background-color: #070A0F;
+      color: #E9ECF0;
+      scroll-behavior: smooth;
+      line-height: 1.6;
+    }
+
+    :root {
+      --bg-dark: #070A0F;
+      --card-bg: rgba(18, 25, 35, 0.75);
+      --glass-edge: rgba(255, 215, 0, 0.15);
+      --gold: #D4AF37;
+      --gold-light: #F5D76E;
+      --teal-accent: #2ABFAF;
+      --text-light: #F0F4FA;
+      --text-muted: #B0C4DE;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    /* navigation */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(14px);
+      background: rgba(7, 10, 15, 0.85);
+      border-bottom: 1px solid var(--glass-edge);
+      padding: 18px 0;
+    }
+
+    .nav-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #FFF, var(--gold));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.2s;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--gold);
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 4px;
+    }
+
+    /* sections */
+    section {
+      padding: 100px 0;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 800;
+      line-height: 1.2;
+      background: linear-gradient(120deg, #FFFFFF, var(--gold-light));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 48px;
+      position: relative;
+      display: inline-block;
+    }
+    h2:after {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      width: 80px;
+      height: 4px;
+      background: var(--gold);
+      border-radius: 4px;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin: 20px 0 16px;
+    }
+
+    .subhead {
+      font-size: 1.3rem;
+      color: var(--text-muted);
+      max-width: 800px;
+      margin-bottom: 32px;
+    }
+
+    /* grid & cards */
+    .grid-2, .grid-3, .grid-4 {
+      display: grid;
+      gap: 40px;
+      margin-top: 30px;
+    }
+    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+
+    .premium-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      border-radius: 32px;
+      padding: 32px;
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      transition: all 0.35s ease;
+      box-shadow: 0 20px 35px -12px rgba(0,0,0,0.4);
+    }
+
+    .premium-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--gold);
+      box-shadow: 0 30px 40px -15px rgba(0,0,0,0.6);
+    }
+
+    .section-img {
+      width: 100%;
+      border-radius: 28px;
+      margin: 48px 0 28px;
+      object-fit: cover;
+      max-height: 550px;
+      transition: transform 0.5s ease, filter 0.3s;
+      box-shadow: 0 20px 30px -10px rgba(0,0,0,0.5);
+    }
+    .section-img:hover {
+      transform: scale(1.01);
+      filter: brightness(1.02);
+    }
+
+    .btn-primary {
+      background: linear-gradient(95deg, var(--gold), #B8860B);
+      border: none;
+      padding: 14px 32px;
+      font-weight: 700;
+      border-radius: 50px;
+      color: #070A0F;
+      font-size: 1rem;
+      cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    .btn-primary:hover {
+      transform: scale(1.03);
+      background: var(--gold-light);
+      box-shadow: 0 8px 20px rgba(212,175,55,0.4);
+    }
+
+    .stats-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 32px;
+      background: var(--card-bg);
+      border-radius: 48px;
+      padding: 48px 32px;
+      margin: 60px 0;
+      text-align: center;
+      border: 1px solid rgba(212,175,55,0.3);
+    }
+    .stat-item h4 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: var(--gold);
+    }
+
+    footer {
+      background: #030609;
+      padding: 48px 0 24px;
+      border-top: 1px solid var(--glass-edge);
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.5rem; }
+      h2 { font-size: 2rem; }
+      .container { padding: 0 20px; }
+      section { padding: 60px 0; }
+      .stats-bar { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-flex">
+    <div class="logo">⚡ ACTIVE ENERGY BOOST</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html">Terms Of Privacy</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="cookies.html">Cookies Policy</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <!-- Hero About Section -->
+  <section style="padding-top: 60px;">
+    <div class="container">
+      <h1>Our mission: <br>Redefine human energy.</h1>
+      <p class="subhead">Active Energy Boost isn't just a gym — it's a movement, a methodology, and a global community of high-performers seeking true vitality. Since 2015, we've engineered an ecosystem where science meets soul, strength meets longevity, and every individual becomes their most powerful version.</p>
+      <a href="#philosophy" class="btn-primary">Discover Our Philosophy →</a>
+    </div>
+    <div class="container">
+      <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=1400&auto=format" alt="Luxury fitness facility with modern architecture and natural light" class="section-img" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Stats / Milestones -->
+  <div class="container stats-bar">
+    <div class="stat-item"><h4>78k+</h4><p>Lives Transformed</p></div>
+    <div class="stat-item"><h4>4.7 yrs</h4><p>Avg. Member Retention</p></div>
+    <div class="stat-item"><h4>1200+</h4><p>On-Demand Workouts</p></div>
+    <div class="stat-item"><h4>3</h4><p>Global Flagships (NY, LDN, DXB)</p></div>
+  </div>
+
+  <!-- Philosophy deep-dive: long-form content "The Origin" -->
+  <section id="philosophy">
+    <div class="container">
+      <h2>The Origin: Beyond Conventional Fitness</h2>
+      <div style="display: flex; flex-direction: column; gap: 28px;">
+        <p>Active Energy Boost was born from a stark realization: the fitness industry was broken. Gyms prioritized volume over value, quick fixes over lasting transformation, and aesthetics over authentic wellness. Our co-founders — elite strength coach Marcus Vega and sports nutrition scientist Dr. Sana Kapoor — envisioned a sanctuary where metabolic science, regenerative protocols, and human psychology converge. In 2015, we opened our first flagship in Los Angeles with a radical promise: treat each member as an unique biological system, not a number.</p>
+        <p>What started as a boutique training lab for professional athletes and executives soon evolved into a global movement. We pioneered AI-driven form analysis, cryotherapy integration, and neuro-somatic coaching when these terms were unknown in mainstream fitness. Our 4-pillar method — Strength Architecture, Cardio-Metabolic Precision, Nutritional Bio-Individuality, and Recovery Science — remains the gold standard for sustainable high performance. Today, Active Energy Boost studios are architectural marvels that blend biophilic design with cutting-edge equipment, fostering an environment where discipline meets peace.</p>
+        <p>We are unapologetically premium, but our heart is inclusive. Whether you're a postpartum mother rebuilding core integrity, a CEO managing cortisol, or a collegiate athlete chasing podiums, our team customizes every variable. Our digital platform democratizes elite coaching, offering real-time feedback and community-driven challenges. This is not a transactional membership; it's a partnership in evolution.</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1532384748853-8f54a8f476e2?w=1400&auto=format" alt="Founders training together in modern gym" class="section-img" loading="lazy">
+    </div>
+  </section>
+
+  <!-- The 4 Pillars section (detailed methodology) -->
+  <section>
+    <div class="container">
+      <h2>The Active Energy Boost Methodology</h2>
+      <div class="grid-4">
+        <div class="premium-card"><h3>🏛️ Strength Architecture</h3><p>Periodized, joint-centric programming that builds resilient muscle and explosive power. We emphasize structural balance, mobility foundations, and progressive overload with data-driven fatigue management.</p></div>
+        <div class="premium-card"><h3>❤️ Cardio-Metabolic Precision</h3><p>Zone training, VO2 max optimization, and lactate threshold sessions. From incline treadmill intervals to assault bike sprints — we elevate cardiac efficiency and fat oxidation.</p></div>
+        <div class="premium-card"><h3>🥑 Nutritional Bio-Individuality</h3><p>No one-size-fits-all diets. DNA, gut microbiome, and lifestyle analysis drive custom macro plans, meal timing, and supplementation. Food is fuel and medicine.</p></div>
+        <div class="premium-card"><h3>🌀 Recovery Science</h3><p>Cryotherapy, Normatec compression, sauna, sleep coaching, and parasympathetic activation. We treat recovery as the hidden half of performance.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- World-Class Trainers - Extended profiles -->
+  <section id="trainers">
+    <div class="container">
+      <h2>Architects of Transformation</h2>
+      <p class="subhead">Our coaches are more than experts — they are mentors, scientists, and motivators. With an average of 12+ years of elite experience, they redefine what’s possible.</p>
+      <div class="grid-3">
+        <div class="premium-card">
+          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format" alt="Marcus Vega strength coach" style="width:100%; border-radius: 24px; margin-bottom: 20px;" loading="lazy">
+          <h3>Marcus Vega</h3>
+          <p><strong>Co-Founder & Head of Performance</strong><br>Former Olympian strength coach, CSCS, NSCA-certified. Marcus has trained 14 world champions and specializes in neuromuscular adaptation. His philosophy: “Master the basics at elite intensity.”</p>
+        </div>
+        <div class="premium-card">
+          <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=500&auto=format" alt="Dr. Sana Kapoor nutrition scientist" style="width:100%; border-radius: 24px; margin-bottom: 20px;" loading="lazy">
+          <h3>Dr. Sana Kapoor</h3>
+          <p><strong>Co-Founder & Director of Nutrition Science</strong><br>PhD in Nutritional Biochemistry, RDN, and gut-health researcher. Dr. Kapoor designs metabolic protocols for body composition, autoimmune support, and cognitive endurance.</p>
+        </div>
+        <div class="premium-card">
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format" alt="Elena Foster yoga mobility" style="width:100%; border-radius: 24px; margin-bottom: 20px;" loading="lazy">
+          <h3>Elena Foster</h3>
+          <p><strong>Mobility & Recovery Director</strong><br>500hr E-RYT, fascial stretch therapist, and breathwork coach. Elena integrates myofascial release with mindful movement to accelerate recovery and prevent injuries.</p>
+        </div>
+      </div>
+      <div class="grid-2" style="margin-top: 40px;">
+        <div class="premium-card"><h3>🔥 Javier Reyes</h3><p>Elite Metabolic Coach & HIIT Specialist. Javier’s high-intensity intervals combined with mindset coaching have produced over 300 fat-loss champions.</p></div>
+        <div class="premium-card"><h3>⚡ Dr. Aliyah Chen</h3><p>Physical Therapist & Sports Medicine Lead. Specializes in return-to-sport and chronic pain resolution using biomechanical analysis and blood flow restriction therapy.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- State-of-the-Art Facilities -->
+  <section>
+    <div class="container">
+      <h2>Sanctuary of Performance</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 40px; margin-bottom: 40px;">
+        <div style="flex: 1;"><p>Our flagship facilities are designed with intention: circadian lighting, HEPA-filtered air, and acoustic engineering to reduce stress. Members enjoy:</p>
+          <ul style="margin-top: 20px; list-style: none;">
+            <li>✓ AI-enabled strength floor with real-time velocity tracking</li>
+            <li>✓ Altitude training chamber (simulates 8,000ft for endurance adaptation)</li>
+            <li>✓ Cryotherapy and infrared sauna suites</li>
+            <li>✓ Private hydrotherapy pools and Normatec recovery lounge</li>
+            <li>✓ Organic nutrition bar serving post-workout adaptogenic smoothies</li>
+          </ul>
+        </div>
+        <div style="flex: 1;"><img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&auto=format" alt="Modern gym equipment and luxury interior" style="width:100%; border-radius: 32px; object-fit: cover;"></div>
+      </div>
+      <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1400&auto=format" alt="Cryotherapy chamber and wellness area" class="section-img" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Long-form success stories & community impact -->
+  <section id="community">
+    <div class="container">
+      <h2>Voices of Transformation</h2>
+      <div class="grid-3">
+        <div class="premium-card"><h3>🏆 From Paralysis to Power</h3><p>"After a spinal cord injury, doctors said I'd never lift again. The AEB recovery team rebuilt my neural pathways. Three years later, I deadlifted 315lbs." — Michael T.</p></div>
+        <div class="premium-card"><h3>🌱 100lbs Lost, Life Gained</h3><p>"I struggled with emotional eating for decades. Dr. Kapoor's metabolic recomp and psychology-first approach gave me freedom. I've kept the weight off for 4 years." — Rachel S.</p></div>
+        <div class="premium-card"><h3>🚀 Executive Energy Overhaul</h3><p>"Jet lag, stress, and low T were my norm. After 6 months of elite concierge, my energy soared, body fat halved, and I sleep like a teenager." — David K., CEO</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Global Digital Ecosystem (long content) -->
+  <section>
+    <div class="container">
+      <h2>Global Reach, Personal Touch</h2>
+      <div style="display: flex; flex-direction: column; gap: 28px;">
+        <p>Beyond our physical flagship locations in Los Angeles, New York, London, and Dubai, the Active Energy Boost digital ecosystem connects members worldwide. Our app features 1,200+ on-demand classes, daily live sessions with master coaches, smart workout logging, and integration with wearables. Members join quarterly transformation challenges, access exclusive webinars from sports scientists, and receive personalized workout adjustments via our AI coach, "AURA".</p>
+        <p>We also host annual retreats in Iceland, Costa Rica, and the Swiss Alps — immersive weeks of training, recovery, and mindset mastery. The community extends to private social networks where members share wins, recipes, and accountability. Active Energy Boost is not just a membership; it’s a lifelong tribe committed to growth. We also partner with leading sports brands to offer members only gear discounts, recovery tools, and biohacking devices.</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1400&auto=format" alt="Group fitness class with trainer motivating" class="section-img" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Press & Accolades -->
+  <section>
+    <div class="container">
+      <h2>Recognized Excellence</h2>
+      <div class="grid-3">
+        <div class="premium-card"><h3>🏅 "Best Premium Gym 2024"</h3><p>Global Wellness Institute Award for innovation in fitness technology and holistic member outcomes.</p></div>
+        <div class="premium-card"><h3>📰 Featured in Forbes, Men’s Health, Vogue</h3><p>“The blueprint for the future of luxury fitness.” — Forbes</p></div>
+        <div class="premium-card"><h3>🌍 B Corp Certified</h3><p>Commitment to sustainability, community giving, and ethical operations. 1% of profits fund youth athletic scholarships.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action: Join Evolution -->
+  <section id="join">
+    <div class="container">
+      <div class="premium-card" style="text-align: center; padding: 64px 32px;">
+        <h2 style="margin-bottom: 24px;">Your story starts here.</h2>
+        <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 32px;">Join a community where excellence is the baseline. Book a tour, speak with a performance advisor, or begin your digital trial.</p>
+        <a href="#" class="btn-primary" style="margin-right: 16px;">Book a Flagship Tour</a>
+        <a href="#" class="btn-primary" style="background: transparent; border: 1px solid var(--gold); color: var(--gold);">Start 7-Day Free Trial</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Information Bar -->
+  <section style="padding: 40px 0; border-bottom: none;">
+    <div class="container">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; background: rgba(18,25,35,0.6); border-radius: 48px; padding: 32px;">
+        <div><strong>📍 Flagship:</strong> 100 Wellness Avenue, LA, CA 90210</div>
+        <div><strong>📞 Concierge:</strong> +1-800-555-ENERGY</div>
+        <div><strong>✉️ hello@activeenergyboost.com</strong></div>
+        <div><strong>IG/TW/FB:</strong> @activeenergyboost</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; margin-bottom: 32px;">
+      <div>© 2026 Active Energy Boost — Elite Fitness & Longevity. All Rights Reserved.</div>
+      <div><a href="#" style="color: var(--gold);">Privacy Policy</a> | <a href="#" style="color: var(--gold);">Terms & Conditions</a> | <a href="#" style="color: var(--gold);">Cookie Settings</a></div>
+    </div>
+    <p style="font-size: 0.8rem;">*Results vary based on individual factors. Always consult a physician before beginning any fitness or nutrition program. Active Energy Boost is a registered trademark.</p>
+  </div>
+</footer>
+
+<script>
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (href === "#" || href === "") return;
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+</body>
+</html>

